@@ -129,6 +129,14 @@ html, body {
   color: var(--text-main);
   text-shadow: 0 0 8px rgba(80,120,160,0.15);
 }
+.bio-text {
+  animation: darkPulse 6s ease-in-out infinite alternate;
+}
+
+@keyframes darkPulse {
+  0% { text-shadow: 0 0 6px rgba(80,120,160,0.15); }
+  100% { text-shadow: 0 0 18px rgba(120,180,255,0.35); }
+}  
 .bio-text strong { color: var(--bone); }
 .bio-text span.accent { color: var(--glow); }
 
@@ -237,10 +245,13 @@ html, body {
       <div class="nick-main">DEMON</div>
 
       <div class="bio-block">
-        <div class="section-label">Opis</div>
-        <p class="bio-text">Przywołany z najzimniejszych sektorów <span class="accent">/dev/abyss</span>, DEMON tworzy interfejsy, które stapiają się z mrokiem – projektuje <strong>realistyczne, stalowe UI</strong>, w których każdy piksel jest cieniem algorytmu.</p>
-        <p class="bio-text" style="margin-top:8px;">Kosmos otacza go pierścieniami lodu i błękitem otchłani, gdzie energia oświetla przestrzeń niczym echo dawnych systemów.</p>
-      </div>
+  <div class="section-label">Opis</div>
+  <p class="bio-text">
+    W moich żyłach płynie mrok, a moje serce bije w rytm piekielnego tańca.
+    Moje słowa są niczym ostrza. Przyciągam i odpycham, intryguję i przerażam.
+    Jestem zagadką, którą trudno rozwikłać.
+  </p>
+</div>
 
       <div class="music-block">
         <div class="section-label">Motyw muzyczny</div>
